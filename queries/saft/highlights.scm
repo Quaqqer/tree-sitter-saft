@@ -5,8 +5,6 @@
 
 [
   "def"
-  "let"
-  "set"
 ] @keyword
 
 (bool) @boolean
