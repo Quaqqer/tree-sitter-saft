@@ -1,0 +1,20 @@
+=================
+Float declaration
+=================
+
+[def f  2.]
+[def f  .1]
+[def f 1.1]
+
+---
+
+(source_file
+  (statement
+    (def (identifier)
+    (expression (primitive (float)))))
+  (statement
+    (def (identifier)
+    (expression (primitive (float)))))
+  (statement
+    (def (identifier)
+    (expression (primitive (float))))))

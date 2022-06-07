@@ -1,0 +1,16 @@
+================
+Bool declaration
+================
+
+[def t true]
+[def f false]
+
+---
+
+(source_file
+  (statement
+    (def (identifier)
+    (expression (primitive (bool)))))
+  (statement
+    (def (identifier)
+    (expression (primitive (bool))))))
