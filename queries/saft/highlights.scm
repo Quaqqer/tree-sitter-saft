@@ -3,6 +3,12 @@
   (float)
 ] @number
 
+[
+  "def"
+  "let"
+  "set"
+] @keyword
+
 (bool) @boolean
 
 (str) @string
