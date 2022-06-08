@@ -32,7 +32,7 @@ module.exports = grammar({
 
     def: $ => seq("def", $.identifier, $.expression),
 
-    identifier: $ => /[A-Za-z_\-][A-Za-z_\-0-9]*/,
+    identifier: $ => /[A-Za-z_][A-Za-z_0-9]*/,
 
     primitive: $ => choice($.int, $.float, $.str, $.bool),
     int: $ => /\d+/,
