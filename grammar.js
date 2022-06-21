@@ -29,14 +29,15 @@ module.exports = grammar({
     expression: $ =>
       choice(
         seq("(", $._inner_expression, ")"),
+        $.call,
         $.int,
         $.float,
         $.str,
         $.bool,
-        $.identifier
+        $.identifier,
       ),
 
-    _inner_expression: $ => choice($.expression, $.call),
+    _inner_expression: $ => choice($.expression),
 
     call: $ => seq("(", $.identifier, repeat($.expression), ")"),
 
